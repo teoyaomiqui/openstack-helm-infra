@@ -37,6 +37,7 @@
     roles:
       - zuul: zuul/zuul-jobs
     pre-run:
+      - playbooks/update.yaml
       - playbooks/osh-infra-upgrade-host.yaml
       - playbooks/osh-infra-deploy-docker.yaml
       - playbooks/osh-infra-deploy-selenium.yaml
