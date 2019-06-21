@@ -13,12 +13,6 @@
 # limitations under the License.
 
 - hosts: all
-  tasks:
-    become: true
-    apt:
-      update_cache: yes
-
-- hosts: all
   vars_files:
     - vars.yaml
   vars:
