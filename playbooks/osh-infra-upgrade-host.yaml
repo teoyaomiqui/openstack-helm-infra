@@ -13,9 +13,10 @@
 # limitations under the License.
 
 - hosts: all
-  become: true
-  apt:
-    update_cache: yes
+  tasks:
+    become: true
+    apt:
+      update_cache: yes
 
 - hosts: all
   vars_files:
